@@ -39,7 +39,7 @@ Route::get('/agregar_hijo', function () {
 
 Route::get('/hijos-registrados', [ViewController::class, 'verHijosRegistrados'])->name('hijos.registrados');
 Route::get('/ver-plan-hijo/{id}', [ViewController::class, 'descargarPlanHijo'])->name('plan.hijo');
-Route::post('/agregar_hijo', [HijoController::class, 'store'])->name('agregar_hijo');
+Route::post('/agregar_hijo', [HijoController::class, 'store'])->name('guardar_hijo');
 
 // editar_perfil.blade.php está en la raíz de views según tu imagen
 Route::get('/editar-perfil/{id}', [ViewController::class, 'editarDocPerfil'])->name('perfil.editar');
